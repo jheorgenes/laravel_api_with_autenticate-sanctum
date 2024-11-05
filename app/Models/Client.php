@@ -9,4 +9,11 @@ class Client extends Model
 {
     /** @use HasFactory<\Database\Factories\ClientFactory> */
     use HasFactory;
+
+    // definindo as propriedades que podem ser preenchidas no endpoint
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+    ];
 }

@@ -15,4 +15,4 @@ Route::get('/status', function () {
  * Rotas Resource API de Client
  * Contem todas as rotas CRUD da tabela Client
  */
-Route::apiResource('client', ClientController::class);
+Route::apiResource('clients', ClientController::class);

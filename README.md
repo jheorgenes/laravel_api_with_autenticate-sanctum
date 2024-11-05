@@ -67,6 +67,17 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # Sanctum
 ## Instalação da estrutura em API com Sanctum
+
 ```sh
 $ php artisan install:api
+```
+
+Criando model com Factory
+```sh
+$ php artisan make:model Client -f
+```
+
+Criando um controller resource API
+```sh
+$ php artisan make:controller <nomeController> --api
 ```

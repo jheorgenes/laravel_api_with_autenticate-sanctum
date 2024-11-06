@@ -18,3 +18,4 @@ Route::apiResource('clients', ClientController::class)->middleware('auth:sanctum
 
 // auth routes
 Route::post('login', [AuthController::class, 'login']);
+Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
